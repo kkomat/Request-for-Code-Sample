@@ -1,0 +1,41 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="main.css">
+
+<!-- Custom Style-->
+
+<h1 class="testHome text-center"><strong>Welcome to The Login Page!</strong></h1>
+
+<div class="container center2_div">
+  <form>
+    <div class="form-group">
+      <label for="email">User Name:</label>
+      <input id="email" type="email" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input id="pwd" type="password" class="form-control"/>
+    </div>
+  </form>
+</div>
+<div class="container center_div">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" class="text-center"/> Remember me
+    </label>
+  </div>
+
+</div>
+<div class="center-block button-wrapper text-center">
+  <button type="button" id="LogIn" data-toggle="modal" data-target="#myModal" class="btn btn-success">LogIn</button>
+</div>
+
+
+<script type="text/javascript">
+  window.onload = function (){
+  document.getElementById("LogIn").onclick = function(){
+  location.href = "/Confirmation"
+  };
+  };
+</script>
